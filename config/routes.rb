@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :event_members
+  resources :members
+  resources :events
   post "/graphql", to: "graphql#execute"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
